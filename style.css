@@ -352,8 +352,16 @@
             display: inline-block;
         }
 
-        /* Download Button */
-        .btn-download {
+       /* Boutons CV PDF */
+        .cv-actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .btn-cv {
             background: linear-gradient(135deg, var(--gold), var(--gold-light));
             color: var(--dark);
             border: none;
@@ -363,13 +371,23 @@
             font-size: 1.1rem;
             transition: var(--transition);
             box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
         }
 
-        .btn-download:hover {
+        .btn-cv:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
             color: var(--dark);
         }
+
+        .btn-cv i {
+            font-size: 1.2rem;
+        }
+
 
         /* Footer */
         footer {
